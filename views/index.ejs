@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MY APP</title>
+</head>
+<body>
+  Enter the URL of a good mixcloud mix.
+
+<ul class="mixes">
+    <% for(var i=0; i<mixes.length; i++){%>
+        <li class="mix">
+                <span><%= mixes[i].mixurl %></span>
+                <span<%= mixes[i].mixurl %></span>
+        </li>
+    <% } %>
+</ul>
+
+<form action="/mixes" method="POST">
+  <input type="text" placeholder="mix url" name="mix url">
+  <button type="submit">Submit</button>
+</form>
+</body>
+</html>
